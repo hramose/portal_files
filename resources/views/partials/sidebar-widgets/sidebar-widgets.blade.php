@@ -1,31 +1,40 @@
 <div class="side-widgets">
 	<div class="widgets-content">
 		<div class="text-center"> 
-			<a href="profile"><img src="images/flat-avatar.jpg" class="user-avatar" /></a>
+			<a href="profile"><img src="images/flat-avatar.png" class="user-avatar" /></a>
 			<div class="text-center avatar-name">
-				Ani Pascal
+				e-Will application
 			</div>
 		</div>
 		
-		<div class="calendar-container text-center" >
+		<!-- <div class="calendar-container text-center" >
 			<div id="calendar2" class="fc-header-title"></div>
-		</div>
+		</div> -->
 
 		<div class="news-feed">
-			<div class="feed-header">{{ Lang::get(\Session::get('lang').'.feed') }}</div>
+			<div class="feed-header"> FAQ's on e-Wills</div>
 			<div class="feed-content">
 				<ul class="feed">
 					<li>
-						<a href="#">{{ Lang::get(\Session::get('lang').'.li1') }}</a> <span class="feed-date">25/4/2015</span>
+						<a href="#">Who is competent to make a will? </a> <span class="feed-date"></span>
 					</li>
 					<li>
-						<a href="#">{{ Lang::get(\Session::get('lang').'.li2') }}</a> <span class="feed-date">25/4/2015</span>
+						<a href="#">Who is competent to act as a witness to a will? </a> <span class="feed-date"></span>
 					</li>
 					<li>
-						<a href="#">{{ Lang::get(\Session::get('lang').'.li3') }}</a> <span class="feed-date">25/4/2015</span>
+						<a href="#">What are the requirements for a valid will? </a> <span class="feed-date"></span>
 					</li>
 					<li>
-						<a href="#">{{ Lang::get(\Session::get('lang').'.li4') }}</a> <span class="feed-date">25/4/2015</span>
+						<a href="#">What are the requirements for a valid will if I cannot sign my name? </a> <span class="feed-date"></span>
+					</li>
+					<li>
+						<a href="#">What if I want to amend my will?  </a> <span class="feed-date"></span>
+					</li>
+					<li>
+						<a href="#">Must I amend my will after divorce?  </a> <span class="feed-date"></span>
+					</li>
+					<li>
+						<a href="#">What will happen if I do not leave a will?  </a> <span class="feed-date"></span>
 					</li>
 				</ul>
 			</div>

@@ -7,15 +7,15 @@
 	        <span class="icon-bar"></span>
 	    </button>
 
-		<a class="navbar-brand" href="home"> Ani Laravel Theme </a>
+		<a class="navbar-brand" href="home"> Welcome</a>
 	</div>
 	<div class="collapse navbar-collapse">
-		<form class="navbar-form navbar-left" role="search">
+		<!-- <form class="navbar-form navbar-left" role="search">
 			<span class="glyphicon glyphicon-search"></span>
 			<div class="form-group">
 				<input type="text" class="form-control" placeholder="">
 			</div>			
-		</form>
+		</form> -->
 		<ul class="nav navbar-nav">
 			<!-- <li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-envelope"></span><span class="badge badge-green">5</span></a>
@@ -110,13 +110,13 @@
 		</ul>
 		<ul class="nav navbar-nav pull-right navbar-right">	
 
-		<li class="dropdown admin-dropdown">
+		    <!-- <li class="dropdown admin-dropdown">
 	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 	            	<span class="hidden-sm">Department(holder)</span>
 	            </a>
 	           
-	        </li>
-			<li class="dropdown color-picker">
+	        </li> -->
+			<!-- <li class="dropdown color-picker">
 	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 	            	<span><i class="fa fa-circle"></i></span>
 	            </a>
@@ -160,12 +160,12 @@
 	                    </table>
 	                </li>
 	            </ul>
-	        </li>
-	         <li>
+	        </li> -->
+	         <!-- <li>
 	       		<a href="#" id="rtlswitch">
 	                <span> LTR/RTL </span>
 	            </a>
-	        </li> 
+	        </li>  -->
             <!-- <li class="dropdown">
             	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 	            	<span>{{ Lang::get(\Session::get('lang').'.lang') }}</span>
@@ -180,7 +180,7 @@
 
 	        <li class="dropdown admin-dropdown">
 	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-	            	<img src="images/flat-avatar.jpg" class="topnav-img" alt=""><span class="hidden-sm">{{Auth::user()->name}}</span>
+	            	<img src="images/flat-avatar.png" class="topnav-img" alt=""><span class="hidden-sm">{{Auth::user()->name}}</span>
 	            </a>
 	            <ul class="dropdown-menu" role="menu">
 	                <li><a href="profile">Profile</a></li>

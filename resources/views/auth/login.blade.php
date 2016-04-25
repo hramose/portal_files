@@ -15,8 +15,12 @@
 				<input type="password" class="form-control input-underline input-lg" name="password" id="password" placeholder={{ Lang::get(\Session::get('lang').'.password') }}>
 			</div>
 		</div>
-		<input type="submit" class="btn btn-white btn-outline btn-lg btn-rounded progress-login" value="{{ Lang::get(\Session::get('lang').'.login') }}" />
+		<!-- <input type="submit" class="btn btn-white btn-outline btn-lg btn-rounded progress-login" value="{{ Lang::get(\Session::get('lang').'.login to complete your will') }}" /> -->
+		<input type="submit" class="btn btn-white btn-outline btn-lg btn-rounded progress-login" value="{{'login to complete your will' }}" />
 		&nbsp;
-		<a href="/register" class="btn btn-white btn-outline btn-lg btn-rounded">{{ Lang::get(\Session::get('lang').'.register') }}</a> 
+		&nbsp;
+		<h4>Or</h4>
+		<!-- <a href="/register" class="btn btn-white btn-outline btn-lg btn-rounded">{{ Lang::get(\Session::get('lang').'.register to start writting yor will') }}</a>  -->
+		<a href="/register" class="btn btn-white btn-outline btn-lg btn-rounded">{{ 'register to start writting yor will' }}</a> 
 	</form>
 @stop
