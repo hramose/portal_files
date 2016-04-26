@@ -39,7 +39,7 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="stipulation_in_case_of_death_of_testator" id="stipulation_in_case_of_death_of_testator" class="form-control" placeholder="First Name/Eerste Naam" rows="5" required> </textarea>
+															<textarea type="text" name="stipulation_in_case_of_death_of_testator" id="stipulation_in_case_of_death_of_testator" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required> <?php if(isset($will_information[0])){echo $will_information[0]->stipulation_in_case_of_death_of_testator;} ?> </textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -60,7 +60,9 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="stipulation_in_case_of_death_of_testatrix" id="stipulation_in_case_of_death_of_testatrix" class="form-control" placeholder="First Name/Eerste Naam" rows="5" required> </textarea>
+															<textarea type="text" name="stipulation_in_case_of_death_of_testatrix" id="stipulation_in_case_of_death_of_testatrix" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required>
+                                                             <?php if(isset($will_information[0])){echo $will_information[0]->stipulation_in_case_of_death_of_testatrix;} ?>
+															 </textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -81,7 +83,9 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="simultaneous_death" id="simultaneous_death" class="form-control" placeholder="First Name/Eerste Naam" rows="5" required> </textarea>
+															<textarea type="text" name="simultaneous_death" id="simultaneous_death" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required>
+															 <?php if(isset($will_information[0])){echo $will_information[0]->simultaneous_death;} ?>
+															 </textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -102,7 +106,9 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="will_in_event_of_family_obliteration" id="will_in_event_of_family_obliteration" class="form-control" placeholder="First Name/Eerste Naam" rows="5" required> </textarea>
+															<textarea type="text" name="will_in_event_of_family_obliteration" id="will_in_event_of_family_obliteration" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required>
+                                                              <?php if(isset($will_information[0])){echo $will_information[0]->will_in_event_of_family_obliteration;} ?>
+															 </textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -123,7 +129,9 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="in_case_of_minor_beneficiaries_we_need_the_following_information" id="in_case_of_minor_beneficiaries_we_need_the_following_information" class="form-control" placeholder="First Name/Eerste Naam" rows="7" required> </textarea>
+															<textarea type="text" name="in_case_of_minor_beneficiaries_we_need_the_following_information" id="in_case_of_minor_beneficiaries_we_need_the_following_information" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="7" required> 
+															 <?php if(isset($will_information[0])){echo $will_information[0]->in_case_of_minor_beneficiaries_we_need_the_following_information;} ?>
+															</textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -144,7 +152,9 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="name_identity_date_of_birth" id="name_identity_date_of_birth" class="form-control" placeholder="First Name/Eerste Naam" rows="5" required> </textarea>
+															<textarea type="text" name="name_identity_date_of_birth" id="name_identity_date_of_birth" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required>
+                                                            <?php if(isset($will_information[0])){echo $will_information[0]->name_identity_date_of_birth;} ?>
+															 </textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -165,7 +175,9 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="guardians" id="guardians" class="form-control" placeholder="First Name/Eerste Naam" rows="5" required> </textarea>
+															<textarea type="text" name="guardians" id="guardians" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required>
+                                                             <?php if(isset($will_information[0])){echo $will_information[0]->guardians;} ?>
+															 </textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -186,7 +198,9 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="maintenance_amount_to_be_paid_to_each_minor_child" id="maintenance_amount_to_be_paid_to_each_minor_child" class="form-control" placeholder="First Name/Eerste Naam" rows="5" required> </textarea>
+															<textarea type="text" name="maintenance_amount_to_be_paid_to_each_minor_child" id="maintenance_amount_to_be_paid_to_each_minor_child" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required> 
+                                                            <?php if(isset($will_information[0])){echo $will_information[0]->maintenance_amount_to_be_paid_to_each_minor_child;} ?>
+															</textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -207,7 +221,9 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="trust_trustee_full_names_id_numbers" id="trust_trustee_full_names_id_numbers" class="form-control" placeholder="First Name/Eerste Naam" rows="5" required> </textarea>
+															<textarea type="text" name="trust_trustee_full_names_id_numbers" id="trust_trustee_full_names_id_numbers" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required>
+                                                             <?php if(isset($will_information[0])){echo $will_information[0]->trust_trustee_full_names_id_numbers;} ?>
+															 </textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -228,7 +244,9 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="executor_full_names_and_and_id_numbers" id="executor_full_names_and_and_id_numbers" class="form-control" placeholder="First Name/Eerste Naam" rows="7" required> </textarea>
+															<textarea type="text" name="executor_full_names_and_and_id_numbers" id="executor_full_names_and_and_id_numbers" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="7" required> 
+                                                             <?php if(isset($will_information[0])){echo $will_information[0]->executor_full_names_and_and_id_numbers;} ?>
+															</textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -268,7 +286,9 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea type="text" name="other_matters" id="other_matters" class="form-control" placeholder="First Name/Eerste Naam" rows="5" required> </textarea>
+															<textarea type="text" name="other_matters" id="other_matters" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required>
+															<?php if(isset($will_information[0])){echo $will_information[0]->other_matters;} ?>
+															 </textarea>
 														<!-- </div> -->
 													<!-- </div> -->
 

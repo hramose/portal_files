@@ -186,7 +186,7 @@
 												<input type="text" name="email_number" id="email_number" class="form-control" placeholder="E-mail" value="{{$Testator[0]->email}}" required>
 											</div>
 											<div class="col-sm-3" style="margin-top:5px">
-												<input type="text" name="employer" id="employer" class="form-control" placeholder="Name of Employer" value="{{$Testator[0]->employer}}" required>
+												<input type="text" name="employer" id="employer" class="form-control" placeholder="Name of Employer" value="{{$Testator[0]->name_of_employer}}" required>
 											</div>
 											<div class="col-sm-3" style="margin-top:5px">
 												<input type="text" name="occupation" id="occupation" class="form-control" placeholder="Occupation/Selfoon nommer" value="{{$Testator[0]->occupation}}" required>

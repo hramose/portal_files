@@ -28,9 +28,9 @@
     
 //     return view('pages/home');
 // });
-Route::get('/will_pdf_preview', function () {
-    return view('will_pdf_preview');
-});
+// Route::get('/will_pdf_preview', function () {
+//     return view('will_pdf_preview');
+// });
 
 Route::get('/login', function () {
     return view('login');
@@ -152,6 +152,9 @@ Route::get('filemanager', 'FileManagerController@index');
 //Route::get('/', 'DashboardController@index');
 
 Route::get('/', 'WillController@index');
+
+Route::get('/will_apply_pdf', 'WillController@will_apply_pdf');
+
 
 Route::get('/will_apply', 'WillController@index');
 
