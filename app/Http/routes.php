@@ -149,12 +149,15 @@ Route::get('dashboard', 'DashboardController@index');
 Route::get('filemanager', 'FileManagerController@index');
 
 
-//Route::get('/', 'DashboardController@index');
+//Route::get('/', 'DashboardController@index'); 
 
 Route::get('/', 'WillController@index');
 
 Route::get('/will_apply_pdf', 'WillController@will_apply_pdf');
 
+Route::get('/sendmail', 'WillController@sendmail');
+
+Route::post('/sendmail', 'WillController@sendmail');
 
 Route::get('/will_apply', 'WillController@index');
 

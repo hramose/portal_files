@@ -225,6 +225,23 @@ class WillController extends Controller
          $will_testator_s_personal_details->save();
         }
 
+         $willquestionare= Will_questionare::where('user_id',$request->user()->id)
+                                                   ->get();
+         $Testator= Will_testator_s_personal_details::where('user_id',$request->user()->id) 
+                                                     ->get(); 
+         $testatrix= Will_testatrix_s_personal_details::where('user_id',$request->user()->id)
+                                                   ->get();
+         $mariage_details= Wills_details_of_marriage::where('user_id',$request->user()->id) 
+                                                     ->get();                                             
+         $will_information= Will_information::where('user_id',$request->user()->id)
+                                                   ->get();
+
+         Mail::send('pages.will_pdf_preview_data', ['willquestionare' => $willquestionare,'Testator'=>$Testator,'testatrix'=>$testatrix,'mariage_details'=>$mariage_details,'will_information'=>$will_information], function ($m){
+            //$m->from('hello@app.com', 'Your Application');
+
+            $m->to("stephenmudere@gmail.com", "stephen mudere")->subject('Your Reminder!');
+        });
+
          return view('pages/thank_you');
 
     }
@@ -311,5 +328,24 @@ class WillController extends Controller
                                                    ->get();
          
          return view('pages/will_pdf_preview_data',$data);
+    }
+
+    public function sendmail(Request $request){
+        $willquestionare= Will_questionare::where('user_id',$request->user()->id)
+                                                   ->get();
+         $Testator= Will_testator_s_personal_details::where('user_id',$request->user()->id) 
+                                                     ->get(); 
+         $testatrix= Will_testatrix_s_personal_details::where('user_id',$request->user()->id)
+                                                   ->get();
+         $mariage_details= Wills_details_of_marriage::where('user_id',$request->user()->id) 
+                                                     ->get();                                             
+         $will_information= Will_information::where('user_id',$request->user()->id)
+                                                   ->get();
+
+         Mail::send('pages.will_pdf_preview_data', ['willquestionare' => $willquestionare,'Testator'=>$Testator,'testatrix'=>$testatrix,'mariage_details'=>$mariage_details,'will_information'=>$will_information], function ($m){
+            //$m->from('hello@app.com', 'Your Application');
+
+            $m->to("stephenmudere@gmail.com", "stephen mudere")->subject('Your Reminder!');
+        });
     }
 } 
