@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('section')
-    <form role="form" method="GET" action="/create_stage2">
+    <form role="form" method="POST" action="/create_stage2">
 	  {!! csrf_field() !!}
     <h4>Register your Will</h4>
             <div class="progress" value="63">
@@ -46,11 +46,11 @@
 										<label class="col-sm-2 control-label">Residential Address/Woonadres</label>
 											<div class="col-sm-10">
 											   <div  style="margin-top:5px">											   	
-											   	   <input type="text" name="street_address" id="street_address" class="form-control" placeholder="Street Address/Straatadres" value="<?php if(isset($testatrix[0])){echo $testatrix[0]->street_address;} ?>" required>
+											   	   <input type="text" name="street_address" id="street_address" class="form-control" placeholder="Street Address/Straatadres" value="<?php if(isset($testatrix[0])){$street_address=explode(":", $testatrix[0]->street_address); echo $street_address[0];} ?>" required>
 											   </div>
 
 											   <div  style="margin-top:5px">											   	
-											   	   <input type="text" name="street_address_line_two" id="street_address_line_two" class="form-control" placeholder="Street Address Line two/Straatadres Line twee" value="<?php if(isset($testatrix[0])){echo $testatrix[0]->street_address;} ?>" required>
+											   	   <input type="text" name="street_address_line_two" id="street_address_line_two" class="form-control" placeholder="Street Address Line two/Straatadres Line twee" value="<?php if(isset($testatrix[0])){$street_address=explode(":", $testatrix[0]->street_address); if (isset($street_address[1])) {echo $street_address[1];} } ?>" required>
 											   </div>
 												
 												<div  class="col-sm-6" style="margin-top:5px">								   	

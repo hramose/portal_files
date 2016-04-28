@@ -1,7 +1,7 @@
 <div class="side-widgets">
 	<div class="widgets-content">
 		<div class="text-center"> 
-			<a href="profile"><img src="images/flat-avatar.png" class="user-avatar" /></a>
+			<a href=""><img src="images/flat-avatar.png" class="user-avatar" /></a>
 			<div class="text-center avatar-name">
 				e-Will application
 			</div>
