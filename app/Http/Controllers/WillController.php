@@ -12,6 +12,7 @@ use App\Will_testator_s_personal_details;
 use App\Will_testatrix_s_personal_details;
 use App\Wills_details_of_marriage;
 use App;
+use Mail;
 use PDF;
 
 class WillController extends Controller
