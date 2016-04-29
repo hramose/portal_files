@@ -144,9 +144,9 @@ Route::group(array('before' => 'auth'), function(){
 
 
 
-Route::get('dashboard', 'DashboardController@index');
+// Route::get('dashboard', 'DashboardController@index');
 
-Route::get('filemanager', 'FileManagerController@index');
+// Route::get('filemanager', 'FileManagerController@index');
 
 
 //Route::get('/', 'DashboardController@index'); 
