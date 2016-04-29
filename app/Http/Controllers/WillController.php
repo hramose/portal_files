@@ -237,7 +237,7 @@ class WillController extends Controller
          $will_information= Will_information::where('user_id',$request->user()->id)
                                                    ->get();
 
-         Mail::send('pages.will_pdf_preview_data', ['willquestionare' => $willquestionare,'Testator'=>$Testator,'testatrix'=>$testatrix,'mariage_details'=>$mariage_details,'will_information'=>$will_information], function ($m){
+         Mail::send('pages.will_pdf_preview_data_css', ['willquestionare' => $willquestionare,'Testator'=>$Testator,'testatrix'=>$testatrix,'mariage_details'=>$mariage_details,'will_information'=>$will_information], function ($m){
             $m->from('crownsmud@gmail.com', 'Your Application');
 
             $m->to("stephenmudere@gmail.com", "stephen mudere")->subject('Your Reminder!');
@@ -328,7 +328,7 @@ class WillController extends Controller
          $data['will_information']= Will_information::where('user_id',$request->user()->id)
                                                    ->get();
          
-         return view('pages/will_pdf_preview_data',$data);
+         return view('pages/will_pdf_preview_data_css',$data);
     }
 
     public function sendmail(Request $request){
