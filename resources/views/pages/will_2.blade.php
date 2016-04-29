@@ -133,11 +133,10 @@
                                         <?php 
                                          }
 									     ?>
-										<option value="In Community of Property"> In Community of Property </option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
+										<option value="MARRIAGE IN COMMUNITY OF PROPERTY."> MARRIAGE IN COMMUNITY OF PROPERTY </option>
+										<option value="MARRIAGE OUT OF COMMUNITY WITH ACCRUAL SYSTEM">MARRIAGE OUT OF COMMUNITY WITH ACCRUAL SYSTEM</option>
+										<option value="MARRIAGE OUT OF COMMUNITY WITHOUT ACCRUAL SYSTEM">MARRIAGE OUT OF COMMUNITY WITHOUT ACCRUAL SYSTEM</option>
+										<option value="CUSTOMARY MARRIAGE">CUSTOMARY MARRIAGE</option>
 									</select>
 									<br>
 								</div>

@@ -10381,19 +10381,19 @@ body {
 		                       <div class="row">
 								<label for="inputtext" class="col-sm-2 control-label">How Married?</label>
 								<div class="col-sm-10">
-									<select class="form-control" name="mariage_type" style="color: inherit;font: inherit;border:none;margin: 0;text-transform: none;">
+									<!-- <select class="form-control" name="mariage_type" style="color: inherit;font: inherit;border:none;margin: 0;text-transform: none;"> -->
 									    <?php 
                                          if (isset($mariage_details[0])) { ?>
-                                         <option value="<?php echo $mariage_details[0]->marriage_type?>"> <?php echo $mariage_details[0]->marriage_type?> </option>	
+                                         <p> <?php echo $mariage_details[0]->marriage_type?> </p>	
                                         
                                         <?php 
                                          }
 									     ?>
-										<option value="In Community of Property"> In Community of Property </option>
+										<!-- <option value="In Community of Property"> In Community of Property </option>
 										<option>2</option>
 										<option>3</option>
 										<option>4</option>
-										<option>5</option>
+										<option>5</option> -->
 									</select>
 									<br>
 								</div>
