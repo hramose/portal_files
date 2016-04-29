@@ -305,9 +305,9 @@ class WillController extends Controller
        //  $data["steve"]="";
        // $pdf = PDF::loadView('will_pdf_preview', $data);
        
-        $pdf = App::make('dompdf.wrapper');
-        $pdf = PDF::loadView('will_pdf_preview');
-        return $pdf->stream();
+        // $pdf = App::make('dompdf.wrapper');
+        // $pdf = PDF::loadView('will_pdf_preview');
+        // return $pdf->stream();
 
    //      Mail::queue('emails.factuur', array('factuur' => $factuur), function($message)
    // {
@@ -329,12 +329,12 @@ class WillController extends Controller
          // $pdf = PDF::loadView('pages/will_pdf_preview_data_css', $data);
          // return $pdf->download('invoice.pdf');
 
-        $pdf = App::make('dompdf.wrapper');
-        $pdf = PDF::loadView('pages/will_pdf_preview_data_css', $data);
-        return $pdf->stream();
+        // $pdf = App::make('dompdf.wrapper');
+        // $pdf = PDF::loadView('pages/will_pdf_preview_data_css', $data);
+        // return $pdf->stream();
 
          
-         //return view('pages/will_pdf_preview_data_css',$data);
+         return view('pages/will_pdf_preview_data_css',$data);
     }
 
     public function sendmail(Request $request){
