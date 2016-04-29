@@ -117,7 +117,7 @@ button,
 input,
 optgroup,
 select,
-textarea {
+p {
   color: inherit;
   font: inherit;
   margin: 0;
@@ -174,7 +174,7 @@ legend {
   border: 0;
   padding: 0;
 }
-textarea {
+p {
   overflow: auto;
 }
 optgroup {
@@ -1086,7 +1086,7 @@ body {
 input,
 button,
 select,
-textarea {
+p {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -2541,7 +2541,7 @@ fieldset[disabled] .form-control {
 fieldset[disabled] .form-control {
   cursor: not-allowed;
 }
-textarea.form-control {
+p.form-control {
   height: auto;
 }
 input[type="search"] {
@@ -2662,7 +2662,7 @@ select.input-sm {
   height: 30px;
   line-height: 30px;
 }
-textarea.input-sm,
+p.input-sm,
 select[multiple].input-sm {
   height: auto;
 }
@@ -2677,7 +2677,7 @@ select.form-group-sm .form-control {
   height: 30px;
   line-height: 30px;
 }
-textarea.form-group-sm .form-control,
+p.form-group-sm .form-control,
 select[multiple].form-group-sm .form-control {
   height: auto;
 }
@@ -2699,7 +2699,7 @@ select.input-lg {
   height: 46px;
   line-height: 46px;
 }
-textarea.input-lg,
+p.input-lg,
 select[multiple].input-lg {
   height: auto;
 }
@@ -2714,7 +2714,7 @@ select.form-group-lg .form-control {
   height: 46px;
   line-height: 46px;
 }
-textarea.form-group-lg .form-control,
+p.form-group-lg .form-control,
 select[multiple].form-group-lg .form-control {
   height: auto;
 }
@@ -3686,9 +3686,9 @@ select.input-group-lg > .input-group-btn > .btn {
   height: 46px;
   line-height: 46px;
 }
-textarea.input-group-lg > .form-control,
-textarea.input-group-lg > .input-group-addon,
-textarea.input-group-lg > .input-group-btn > .btn,
+p.input-group-lg > .form-control,
+p.input-group-lg > .input-group-addon,
+p.input-group-lg > .input-group-btn > .btn,
 select[multiple].input-group-lg > .form-control,
 select[multiple].input-group-lg > .input-group-addon,
 select[multiple].input-group-lg > .input-group-btn > .btn {
@@ -3709,9 +3709,9 @@ select.input-group-sm > .input-group-btn > .btn {
   height: 30px;
   line-height: 30px;
 }
-textarea.input-group-sm > .form-control,
-textarea.input-group-sm > .input-group-addon,
-textarea.input-group-sm > .input-group-btn > .btn,
+p.input-group-sm > .form-control,
+p.input-group-sm > .input-group-addon,
+p.input-group-sm > .input-group-btn > .btn,
 select[multiple].input-group-sm > .form-control,
 select[multiple].input-group-sm > .input-group-addon,
 select[multiple].input-group-sm > .input-group-btn > .btn {
@@ -7312,8 +7312,8 @@ img.profile-photo {
   margin-right: 3%;
   font-size: 13px;
 }
-.profile-body .profile-comment textarea,
-.profile-body .item textarea {
+.profile-body .profile-comment p,
+.profile-body .item p {
   border: none;
   width: 100%;
 }
@@ -10436,7 +10436,7 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="stipulation_in_case_of_death_of_testator" id="stipulation_in_case_of_death_of_testator" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->stipulation_in_case_of_death_of_testator;} ?> </textarea>
+															<p readonly type="text" name="stipulation_in_case_of_death_of_testator" id="stipulation_in_case_of_death_of_testator" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->stipulation_in_case_of_death_of_testator;} ?> </p>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10457,8 +10457,8 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="stipulation_in_case_of_death_of_testatrix" id="stipulation_in_case_of_death_of_testatrix" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->stipulation_in_case_of_death_of_testatrix;} ?>
-															 </textarea>
+															<p readonly type="text" name="stipulation_in_case_of_death_of_testatrix" id="stipulation_in_case_of_death_of_testatrix" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->stipulation_in_case_of_death_of_testatrix;} ?>
+															 </p>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10479,8 +10479,8 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="simultaneous_death" id="simultaneous_death" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->simultaneous_death;} ?>
-															 </textarea>
+															<p readonly type="text" name="simultaneous_death" id="simultaneous_death" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->simultaneous_death;} ?>
+															 </p>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10501,8 +10501,8 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="will_in_event_of_family_obliteration" id="will_in_event_of_family_obliteration" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->will_in_event_of_family_obliteration;} ?>
-															 </textarea>
+															<p readonly type="text" name="will_in_event_of_family_obliteration" id="will_in_event_of_family_obliteration" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->will_in_event_of_family_obliteration;} ?>
+															 </p>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10523,8 +10523,8 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="in_case_of_minor_beneficiaries_we_need_the_following_information" id="in_case_of_minor_beneficiaries_we_need_the_following_information" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="7" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->in_case_of_minor_beneficiaries_we_need_the_following_information;} ?>
-															</textarea>
+															<p readonly type="text" name="in_case_of_minor_beneficiaries_we_need_the_following_information" id="in_case_of_minor_beneficiaries_we_need_the_following_information" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="7" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->in_case_of_minor_beneficiaries_we_need_the_following_information;} ?>
+															</p>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10545,8 +10545,8 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="name_identity_date_of_birth" id="name_identity_date_of_birth" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->name_identity_date_of_birth;} ?>
-															 </textarea>
+															<p readonly type="text" name="name_identity_date_of_birth" id="name_identity_date_of_birth" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->name_identity_date_of_birth;} ?>
+															 </p>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10567,8 +10567,8 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="guardians" id="guardians" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->guardians;} ?>
-															 </textarea>
+															<p readonly type="text" name="guardians" id="guardians" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->guardians;} ?>
+															 </p>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10589,8 +10589,8 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="maintenance_amount_to_be_paid_to_each_minor_child" id="maintenance_amount_to_be_paid_to_each_minor_child" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->maintenance_amount_to_be_paid_to_each_minor_child;} ?>
-															</textarea>
+															<p readonly type="text" name="maintenance_amount_to_be_paid_to_each_minor_child" id="maintenance_amount_to_be_paid_to_each_minor_child" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->maintenance_amount_to_be_paid_to_each_minor_child;} ?>
+															</p>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10611,8 +10611,8 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="trust_trustee_full_names_id_numbers" id="trust_trustee_full_names_id_numbers" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->trust_trustee_full_names_id_numbers;} ?>
-															 </textarea>
+															<p readonly type="text" name="trust_trustee_full_names_id_numbers" id="trust_trustee_full_names_id_numbers" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->trust_trustee_full_names_id_numbers;} ?>
+															 </p>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10633,8 +10633,8 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="executor_full_names_and_and_id_numbers" id="executor_full_names_and_and_id_numbers" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="7" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->executor_full_names_and_and_id_numbers;} ?>
-															</textarea>
+															<p readonly type="text" name="executor_full_names_and_and_id_numbers" id="executor_full_names_and_and_id_numbers" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="7" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->executor_full_names_and_and_id_numbers;} ?>
+															</p>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10674,8 +10674,8 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<textarea readonly type="text" name="other_matters" id="other_matters" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->other_matters;} ?>
-															 </textarea>
+															<p readonly type="text" name="other_matters" id="other_matters" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->other_matters;} ?>
+															 </p>
 														<!-- </div> -->
 													<!-- </div> -->
 
