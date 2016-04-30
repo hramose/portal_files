@@ -290,7 +290,7 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<button type="button" class="btn btn-primary btn-rounded"  style="margin-top:5px; float: left;">Back</button> 
+															<button type="button" class="btn btn-primary btn-rounded"  style="margin-top:5px; float: left;" onclick="history.back();">Back</button> 
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -299,7 +299,7 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<button type="submit" class="btn btn-primary btn-rounded"   style="margin-top:5px; float: right;" onclick="history.back();">Submit
+															<button type="submit" class="btn btn-primary btn-rounded"   style="margin-top:5px; float: right;" >Submit
 															</button> 
 														<!-- </div> -->
 													<!-- </div> -->
