@@ -21,6 +21,6 @@
 		&nbsp;
 		<h4>Or</h4>
 		<!-- <a href="/register" class="btn btn-white btn-outline btn-lg btn-rounded">{{ Lang::get(\Session::get('lang').'.register to start writting yor will') }}</a>  -->
-		<a href="/register" class="btn btn-white btn-outline btn-lg btn-rounded">{{ 'register to start writting yor will' }}</a> 
+		<a href="/register" class="btn btn-white btn-outline btn-lg btn-rounded">{{ 'register to write your will' }}</a> 
 	</form>
 @stop
