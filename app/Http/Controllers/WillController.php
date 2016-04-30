@@ -238,7 +238,7 @@ class WillController extends Controller
                                                    ->get();
 
          Mail::send('pages.will_pdf_preview_data_css', ['willquestionare' => $willquestionare,'Testator'=>$Testator,'testatrix'=>$testatrix,'mariage_details'=>$mariage_details,'will_information'=>$will_information], function ($m){
-            $m->from("mapotac@yahoo.com", 'New will application');
+            $m->from("stephenmudere@gmail.com", 'New will application');
 
             $m->to("mapotac@yahoo.com", "Mapota Calvin")->subject('Your Reminder!');
 
