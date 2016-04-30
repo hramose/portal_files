@@ -299,7 +299,7 @@
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<button type="submit" class="btn btn-primary btn-rounded"   style="margin-top:5px; float: right;">Submit
+															<button type="submit" class="btn btn-primary btn-rounded"   style="margin-top:5px; float: right;" onclick="history.back();">Submit
 															</button> 
 														<!-- </div> -->
 													<!-- </div> -->

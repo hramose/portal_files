@@ -150,7 +150,7 @@
                      <div>
 
                                          <button type="submit" class="btn btn-primary btn-rounded"  style="margin-top:5px; float: right;">Next</button> 
-							        	 <button type="button" class="btn btn-primary btn-rounded"  style="margin-top:5px; float: right;">Back</button> 
+							        	 <button type="button" class="btn btn-primary btn-rounded"  style="margin-top:5px; float: right;" onclick="history.back();">Back</button> 
 				     </div>
 
 			</div>						
