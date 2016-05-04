@@ -172,14 +172,14 @@ class WillController extends Controller
          Wills_details_of_marriage::where('user_id', '=', $request->user()->id)
             ->update(array(
                 'marriage_type' => Input::get('mariage_type'),
-                'marriage_date' => Input::get('datetimepicker')
+                'marriage_date' => Input::get('date_marriage')
                 )
             );
 
         }else{
          $mariage_type=new Wills_details_of_marriage;
          $mariage_type->user_id=$request->user()->id;
-         $mariage_type->marriage_date=Input::get('datetimepicker');
+         $mariage_type->marriage_date=Input::get('date_marriage');
          $mariage_type->marriage_type=Input::get('mariage_type');
          $mariage_type->save();
        }
@@ -245,7 +245,9 @@ class WillController extends Controller
             //$m->to("stephenmudere@gmail.com", "stephen mudere")->subject('Your Reminder!');
         });
 
-         return view('pages/thank_you');
+        $request->session()->flush();
+
+        //return view('pages/thank_you');
 
     }
 

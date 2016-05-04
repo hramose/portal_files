@@ -293,3 +293,48 @@
       
     </div>
   </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Our Costs For Preparing A Will  </h4>
+        </div>
+        <div class="modal-body">
+         <p>Unlike many of the larger  trust service providers, our affordable rates are not subject to the  condition that you need to appoint us to act as the executor of your will.</p>
+         <p><strong>Please see our price guide  below:</strong></p>
+         <tbody>
+         <tr>
+              <td class="col-sm-6" valign="top"><p>Simple individual will</p></td>
+              <td class="col-sm-6" valign="top"><p>R200.00</p></td>
+            </tr>
+            <tr>
+              <td class="col-sm-6" valign="top"><p>Simple joint and mutual will</p></td>
+              <td class="col-sm-6" valign="top"><p>R250.00</p></td>
+            </tr>
+            <tr>
+              <td class="col-sm-6" valign="top"><p>Will incorporating a testamentary trust</p></td>
+              <td class="col-sm-6" valign="top"><p>R400.00</p></td>
+            </tr>
+            <tr>
+              <td class="col-sm-6" valign="top"><p>Will with detailed heirs    and legatees</p></td>
+              <td class="col-sm-6" valign="top"><p>R400.00</p></td>
+            </tr>
+            <tr>
+              <td class="col-sm-6" valign="top"><p>Simple <em>Sharia</em> will</p></td>
+              <td class="col-sm-6" valign="top"><p>R250.00</p></td>
+            </tr>
+          </tbody>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>

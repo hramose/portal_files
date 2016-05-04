@@ -8,6 +8,16 @@
 	<form role="form" method="POST" action="/auth/login">
 	   {!! csrf_field() !!}
 		<div class="form-content" >
+		    @if (count($errors) > 0)
+						<div class="alert alert-danger">
+							<strong> </strong> Login Error.<br><br>
+							<ul>
+								@foreach ($errors->all() as $error)
+									<li>{{ $error }}</li>
+								@endforeach
+							</ul>
+						</div>
+					@endif
 			<div class="form-group">
 				<input type="text" class="form-control input-underline input-lg" name="email" id="email" placeholder={{ Lang::get(\Session::get('lang').'.email') }}>
 			</div>
