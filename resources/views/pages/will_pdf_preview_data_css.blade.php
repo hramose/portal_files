@@ -10153,20 +10153,7 @@ body {
 		                         </div>	
 
 
-		                        <label for="inputtext" class="col-sm-6 control-label">Are you English or Afrikaans?</label>
-								<div class="col-sm-6">
-									<div class="checkbox">
-										<label>
-											<input readonly type="checkbox" value="english" name="language"  style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;box-sizing: border-box;padding: 0;" id="english" onclick="javascript:uncheckAfrikaans(this);" @if($willquestionare[0]->language=='english')checked @endif>
-											English
-										</label>
-									</div>
-									<div class="checkbox disabled">
-										<label>
-											<input readonly type="checkbox" value="afrikaans" id="africans"  style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;box-sizing: border-box;padding: 0;" name="language" onclick="javascript:uncheckEnglish(this);" @if($willquestionare[0]->language=='afrikaans')checked @endif>
-											Afrikaans
-										</label>
-									</div>
+		                       
 		                         </div>	
 
 		                    </div>	
@@ -10180,7 +10167,7 @@ body {
                      <div class="panel panel-info">
 
 								<div class="panel-heading">
-									<h3 class="panel-title">Testator's personal details / Testateur se persoonlike besonderhede:	  <div class="panel-control pull-right">
+									<h3 class="panel-title">Testator's personal details   <div class="panel-control pull-right">
 											<a class="panelButton" style="background-color: transparent;"><i class="fa fa-refresh"></i></a>
 											<a class="panelButton" style="background-color: transparent;"><i class="fa fa-minus"></i></a>
 											<a class="panelButton" style="background-color: transparent;"><i class="fa fa-remove"></i></a>
@@ -10191,25 +10178,25 @@ body {
 								<div class="panel-body">
 
                                     <div class="form-group">
-										<label class="col-sm-2 control-label">Fullname/Volle naam</label>
+										<label class="col-sm-2 control-label">Fullname</label>
 											<div class="col-sm-5" style="margin-top:5px">
-												<input readonly type="text" name="first_name" id="first_name" value="{{$Testator[0]->fullname}}" class="form-control" placeholder="First Name/Eerste Naam" required style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;">
+												<input readonly type="text" name="first_name" id="first_name" value="{{$Testator[0]->fullname}}" class="form-control" placeholder="First Name" required style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;">
 											</div>
 											<div class="col-sm-5" style="margin-top:5px">
-												<input readonly type="text" name="second_name" id="second_name" value="{{$Testator[0]->surname}}" class="form-control" placeholder="Surname/Van" required style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;">
+												<input readonly type="text" name="second_name" id="second_name" value="{{$Testator[0]->surname}}" class="form-control" placeholder="Surname" required style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;">
 											</div>
 							        </div>
 
 							        <div class="form-group">
-										<label class="col-sm-2 control-label">ID Number/ID-nommer</label>
+										<label class="col-sm-2 control-label">ID Number</label>
 											<div class="col-sm-10" style="margin-top:5px">
-												<input readonly type="text" name="id_number" id="id_number" class="form-control" value="{{$Testator[0]->id_number}}" placeholder="ID Number/ID-nommer" required style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;">
+												<input readonly type="text" name="id_number" id="id_number" class="form-control" value="{{$Testator[0]->id_number}}" placeholder="ID Number" required style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;">
 											</div>
 							        </div>
 
                                     
                                     <div class="form-group">
-										<label class="col-sm-2 control-label">Residential Address/Woonadres</label>
+										<label class="col-sm-2 control-label">Residential Address</label>
 											<div class="col-sm-10">
 											   <div style="margin-top:5px">											   	
 											   	   <input readonly type="text" name="street_address" id="street_address" class="form-control" placeholder="Street Address/Straatadres" value="<?php if(isset($Testator[0])){$street_address=explode(":", $Testator[0]->street_address); echo $street_address[0];} ?>" required style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;">
@@ -10229,9 +10216,7 @@ body {
 											   <div class="col-sm-6" style="margin-top:5px">								   	
 											   	   <input readonly type="text" name="postal_code" id="postal_code" class="form-control" placeholder="Postal Code/Poskode" value="{{$Testator[0]->postal_code}}" required style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;">
 											   </div>
-											   <div class="col-sm-6" style="margin-top:5px">								   	
-											   	   @include('widgets.dropdown-button', array('class'=>'primary', 'value'=>'Select Country', 'submenu'=> array( 'lists' => array('name' => 'Action', 'link' => '#'),array('name' => 'Another action', 'link' => '#'))))
-											   </div>
+											   
 
 											</div>
 							        </div>
@@ -10315,9 +10300,7 @@ body {
 											   <div class="col-sm-6" style="margin-top:5px">								   	
 											   	   <input readonly type="text" name="postal_code" id="postal_code" class="form-control" placeholder="Postal Code/Poskode" value="<?php if(isset($testatrix[0])){echo $testatrix[0]->postal_code;} ?>" required style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;">
 											   </div>
-											   <div class="col-sm-6" style="margin-top:5px">								   	
-											   	   @include('widgets.dropdown-button', array('class'=>'primary', 'value'=>'Select Country', 'submenu'=> array( 'lists' => array('name' => 'Action', 'link' => '#'),array('name' => 'Another action', 'link' => '#'))))
-											   </div>
+											   
 
 											</div>
 							        </div>
@@ -10369,10 +10352,8 @@ body {
 											<div class="col-sm-10">
 												<p class="input-group">
 													<div class="input-group date" id="datetimepicker" name="datetimepicker">
-									                    <input readonly type="text" class="form-control" style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;">
-									                    <span class="input-group-addon" style="cursor: pointer;">
-									                        <span class="glyphicon glyphicon-calendar"></span>
-									                    </span>
+									                    <input readonly type="text" class="form-control" style="color: inherit;font: inherit;border:none;margin: 0;line-height: normal;" value="$mariage_details[0]->marriage_date?">
+									                    
 									                </div>						            
 									            </p>
 											</div>
@@ -10674,7 +10655,7 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<p readonly type="text" name="other_matters" id="other_matters" class="form-control text-left" placeholder="First Name/Eerste Naam" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->other_matters;} ?>
+															<p readonly type="text" name="other_matters" id="other_matters" class="form-control text-left" placeholder="First Name" rows="5" required style="color: inherit;font: inherit;border:none;margin: 0;overflow: auto; resize: vertical;"><?php if(isset($will_information[0])){echo $will_information[0]->other_matters;} ?>
 															 </p>
 														<!-- </div> -->
 													<!-- </div> -->

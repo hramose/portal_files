@@ -152,7 +152,7 @@
 										<label class="col-sm-2 control-label">Residential Address<!-- /Woonadres --></label>
 											<div class="col-sm-10">
 											   <div  style="margin-top:5px">											   	
-											   	   <input type="text" name="street_address" id="street_address" class="form-control" placeholder="Street Address" value="<?php if(isset($Testator[0])){$street_address=explode(":", $Testator[0]->street_address); echo $street_address[0];} ?>" required>
+											   	   <input type="text" name="street_address" id="street_address" class="form-control" placeholder="Street Addresss" value="<?php if(isset($Testator[0])){$street_address=explode(":", $Testator[0]->street_address); echo $street_address[0];} ?>" required>
 											   </div>
 
 											   <div  style="margin-top:5px">											   	

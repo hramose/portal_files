@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Input;
+use App\User;
 use App\Will_information;
 use App\Will_questionare;
 use App\Will_testator_s_personal_details;
@@ -33,6 +34,10 @@ class WillController extends Controller
         //
         // $will_info_type_lang=new Will_questionare;
         // $will_info_type_lang->type_of_will=Input::get('type_of_will');
+        if ($request->user()->will_info_recieved=="1") {
+            # code...
+            return view('pages/Will_with_us');exit;
+        }
 
         $data['willquestionare']= Will_questionare::where('user_id',$request->user()->id)
                                                    ->get();
@@ -49,6 +54,11 @@ class WillController extends Controller
     public function create_stage1(Request $request)
     {
         //
+         if ($request->user()->will_info_recieved=="1") {
+            # code...
+            return view('pages/Will_with_us');exit;
+        }
+
 
         if (Will_questionare::where('user_id', '=', $request->user()->id)->count()>0) {
         #update existing record
@@ -130,6 +140,10 @@ class WillController extends Controller
    public function create_stage2(Request $request)
     {
         //
+        if ($request->user()->will_info_recieved=="1") {
+            # code...
+            return view('pages/Will_with_us');exit;
+        }
         if (Will_testatrix_s_personal_details::where('user_id', '=', $request->user()->id)->count()>0) {
           
            Will_testatrix_s_personal_details::where('user_id', '=', $request->user()->id)
@@ -191,6 +205,10 @@ class WillController extends Controller
     }
 
     public function create_stage3(Request $request){
+          if ($request->user()->will_info_recieved=="1") {
+            # code...
+            return view('pages/Will_with_us');exit;
+          }
           if (Will_information::where('user_id', '=', $request->user()->id)->count()>0) {
             Will_information::where('user_id', '=', $request->user()->id)
             ->update(array(
@@ -240,10 +258,16 @@ class WillController extends Controller
          Mail::send('pages.will_pdf_preview_data_css', ['willquestionare' => $willquestionare,'Testator'=>$Testator,'testatrix'=>$testatrix,'mariage_details'=>$mariage_details,'will_information'=>$will_information], function ($m){
             $m->from("stephenmudere@gmail.com", 'New will application');
 
-            $m->to("mapotac@yahoo.com", "Mapota Calvin")->subject('Your Reminder!');
+            $m->to("brian@ngomneestates.co.za", "Brian Kufa")->subject('New Will Application');
 
             //$m->to("stephenmudere@gmail.com", "stephen mudere")->subject('Your Reminder!');
         });
+
+         User::where('user_id', '=', $request->user()->id)
+            ->update(array(
+                'will_info_recieved' => "1"
+                )
+            );
 
         $request->session()->flush();
 

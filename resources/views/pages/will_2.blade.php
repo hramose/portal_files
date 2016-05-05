@@ -113,7 +113,7 @@
 											<div class="col-sm-10">
 												<p class="input-group">
 													<!-- <div class='input-group date' id='datetimepicker' name="datetimepicker"> -->
-									                    <input type='text' name="date_marriage"  id="date_marriage" class="form-control" value="<?php echo $mariage_details[0]->marriage_date?>"/>
+									                    <input type='text' name="date_marriage" required id="date_marriage" class="form-control" value="<?php echo $mariage_details[0]->marriage_date?>"/>
 									                    <!-- <span class="input-group-addon">
 									                        <span class="glyphicon glyphicon-calendar"></span>
 									                    </span> -->
