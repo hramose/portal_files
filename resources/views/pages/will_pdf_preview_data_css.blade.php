@@ -10251,7 +10251,7 @@ body {
                   <div class="panel panel-info">
 
 								<div class="panel-heading">
-									<h3 class="panel-title">Testatrix personal details / Testatrise se persoonlike besonderhede:	  <div class="panel-control pull-right">
+									<h3 class="panel-title">Testatrix personal details:	  <div class="panel-control pull-right">
 											<a class="panelButton" style="background-color: transparent;"><i class="fa fa-refresh"></i></a>
 											<a class="panelButton" style="background-color: transparent;"><i class="fa fa-minus"></i></a>
 											<a class="panelButton" style="background-color: transparent;"><i class="fa fa-remove"></i></a>
@@ -10408,7 +10408,7 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<div class="text-center"><label>Stipulation in case of death of Testator/Bepaling ten tye van afsterwe van Testateur:</label></div>
+															<div class="text-center"><label>Stipulation in case of death of Testator:</label></div>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10429,7 +10429,7 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<div class="text-center"><label>Stipulation in case of death of Testatrix/Bepaling ten tye van afsterwe van Testatrise:</label></div>
+															<div class="text-center"><label>Stipulation in case of death of Testatrix:</label></div>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10451,7 +10451,7 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<div class="text-center"><label>Simultaneous death/Gesamentlike afsterwe:</label></div>
+															<div class="text-center"><label>Simultaneous death:</label></div>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10473,7 +10473,7 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<div class="text-center"><label>Will in event of family obliteration/Gesinsuitwissing (Optional):</label></div>
+															<div class="text-center"><label>Will in event of family obliteration (Optional):</label></div>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10495,7 +10495,7 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<div class="text-center"><label>In case of minor beneficiaries we need the following information:/In geval waar minderjariges begunstigdes is benodig ons die volgende Inligting:</label></div>
+															<div class="text-center"><label>In case of minor beneficiaries we need the following information:</label></div>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10517,7 +10517,7 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<div class="text-center"><label>Name/Naam en Identity/Identiteitsnommers or/of Date of Birth/Geboortedaum of minors:</label></div>
+															<div class="text-center"><label>Name/  Identity/ or/of Date of Birth/Geboortedaum of minors:</label></div>
 														<!-- </div> -->
 													<!-- </div> -->
 
@@ -10605,7 +10605,7 @@ body {
 													<!-- <div class="panel panel-default"> -->
 
 														<!-- <div class="panel-body"> -->
-															<div class="text-center"><label>Executor/Eksekuteur: Full Names/Volle name and Identity Number/Identiteitsnommer, we will appoint Executors/ with the person that you nominate</label></div>
+															<div class="text-center"><label>Executor/Eksekuteur: Full Names and Identity Number/, we will appoint Executors/ with the person that you nominate</label></div>
 														<!-- </div> -->
 													<!-- </div> -->
 
