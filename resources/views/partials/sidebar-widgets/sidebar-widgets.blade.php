@@ -19,7 +19,7 @@
 						<a data-toggle="modal" data-target="#myModal">Who is competent to make a will? </a> <span class="feed-date"></span>
 					</li>
 					<li>
-						<a data-toggle="modal" data-target="#myModal1">Who is competent to act as a witness to a will? </a> <span class="feed-date"></span>
+						<h2><a data-toggle="modal" data-target="#myModal1">Who is competent to act as a witness to a will? </a> <span class="feed-date"></span></h2>
 					</li>
 					<li>
 						<a data-toggle="modal" data-target="#myModal2">What are the requirements for a valid will? </a> <span class="feed-date"></span>

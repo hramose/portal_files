@@ -325,10 +325,10 @@
               <td class="col-sm-6" valign="top"><p>Will with detailed heirs    and legatees</p></td>
               <td class="col-sm-6" valign="top"><p>R400.00</p></td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td class="col-sm-6" valign="top"><p>Simple <em>Sharia</em> will</p></td>
               <td class="col-sm-6" valign="top"><p>R250.00</p></td>
-            </tr>
+            </tr> -->
           </tbody>
         </div>
         <div class="modal-footer">
