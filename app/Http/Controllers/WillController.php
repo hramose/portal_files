@@ -247,7 +247,7 @@ class WillController extends Controller
 
         $request->session()->flush();
 
-        //return view('pages/thank_you');
+        return view('pages/thank_you');
 
     }
 
