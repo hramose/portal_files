@@ -263,7 +263,7 @@ class WillController extends Controller
             //$m->to("stephenmudere@gmail.com", "stephen mudere")->subject('Your Reminder!');
         });
 
-         User::where('user_id', '=', $request->user()->id)
+         User::where('id', '=', $request->user()->id)
             ->update(array(
                 'will_info_recieved' => "1"
                 )

@@ -15,7 +15,7 @@
 		</div>
 		</div>
 		<!-- <input type="submit" class="btn btn-white btn-outline btn-lg btn-rounded progress-login" value="{{ Lang::get(\Session::get('lang').'.login to complete your will') }}" /> -->
-		<input type="" class="btn btn-white btn-outline btn-lg btn-rounded progress-login" value="{{'<< Back' }}" />
+		<input type="" class="btn btn-white btn-outline btn-lg btn-rounded progress-login" onclick="history.back();"> value="{{'<< Back' }}" />
 		&nbsp;
 		&nbsp;
 		
