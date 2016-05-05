@@ -136,7 +136,7 @@
 												<input type="text" name="first_name" id="first_name" value="{{$Testator[0]->fullname}}" class="form-control" placeholder="First Name" required>
 											</div>
 											<div class="col-sm-5" style="margin-top:5px">
-												<input type="text" name="second_name" id="second_name" value="{{$Testator[0]->surname}}" class="form-control" placeholder="Surname/Van" required>
+												<input type="text" name="second_name" id="second_name" value="{{$Testator[0]->surname}}" class="form-control" placeholder="Surname" required>
 											</div>
 							        </div>
 
@@ -152,7 +152,7 @@
 										<label class="col-sm-2 control-label">Residential Address<!-- /Woonadres --></label>
 											<div class="col-sm-10">
 											   <div  style="margin-top:5px">											   	
-											   	   <input type="text" name="street_address" id="street_address" class="form-control" placeholder="Street Address/Straatadres" value="<?php if(isset($Testator[0])){$street_address=explode(":", $Testator[0]->street_address); echo $street_address[0];} ?>" required>
+											   	   <input type="text" name="street_address" id="street_address" class="form-control" placeholder="Street Address" value="<?php if(isset($Testator[0])){$street_address=explode(":", $Testator[0]->street_address); echo $street_address[0];} ?>" required>
 											   </div>
 
 											   <div  style="margin-top:5px">											   	
