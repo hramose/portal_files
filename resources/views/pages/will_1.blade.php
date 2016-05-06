@@ -221,7 +221,7 @@
 								<div class="panel-body">
 
                                     <div class="form-group" >
-										<label class="col-sm-2 control-label">Fullname/Volle naam</label>
+										<label class="col-sm-2 control-label">Fullname</label>
 											<div class="col-sm-5" style="margin-top:5px">
 												<input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name" required>
 											</div>
@@ -231,7 +231,7 @@
 							        </div>
 
 							        <div class="form-group"  >
-										<label class="col-sm-2 control-label">ID Number/ID-nommer</label>
+										<label class="col-sm-2 control-label">ID Number</label>
 											<div class="col-sm-10" style="margin-top:5px">
 												<input type="text" name="id_number" id="id_number" class="form-control" placeholder="ID Number" required>
 											</div>
