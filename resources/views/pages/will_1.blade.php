@@ -239,7 +239,7 @@
 
                                     
                                     <div class="form-group"  >
-										<label class="col-sm-2 control-label">Residential Address/Woonadres</label>
+										<label class="col-sm-2 control-label">Residential Address<!-- /Woonadres --></label>
 											<div class="col-sm-10">
 											   <div  style="margin-top:5px">											   	
 											   	   <input type="text" name="street_address" id="street_address" class="form-control" placeholder="Street Address" required>
