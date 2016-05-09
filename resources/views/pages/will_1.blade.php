@@ -210,7 +210,7 @@
                      <div class="panel panel-info">
 
 								<div class="panel-heading">
-									<h3 class="panel-title">Testator's personal details / Testateur se persoonlike besonderhede:	  <div class="panel-control pull-right">
+									<h3 class="panel-title">Testator's personal details <!-- / Testateur se persoonlike besonderhede: -->	  <div class="panel-control pull-right">
 											<a class="panelButton"><i class="fa fa-refresh"></i></a>
 											<a class="panelButton"><i class="fa fa-minus"></i></a>
 											<a class="panelButton"><i class="fa fa-remove"></i></a>
@@ -250,7 +250,7 @@
 											   </div>
 												
 												<div  class="col-sm-6" style="margin-top:5px">								   	
-											   	   <input type="text" name="city" id="city" class="form-control" placeholder="City/Stad" required>
+											   	   <input type="text" name="city" id="city" class="form-control" placeholder="City" required>
 											   </div>
 											   <div  class="col-sm-6" style="margin-top:5px">								   	
 											   	   <input type="text" name="province" id="province" class="form-control" placeholder="Province" required>
