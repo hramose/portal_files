@@ -36,9 +36,9 @@
 					<li>
 						<a data-toggle="modal" data-target="#myModal6">What will happen if I do not leave a will?  </a> <span class="feed-date"></span>
 					</li>
-					<li>
+					<!-- <li>
 						<a data-toggle="modal" data-target="#myModal7">Our Costs For Preparing A Will  </a> <span class="feed-date"></span>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
